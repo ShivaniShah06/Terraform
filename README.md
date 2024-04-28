@@ -26,3 +26,6 @@ Learning Terraform for Infrastructure as Code
    ```shell
    terraform destroy
    ```
+
+### **What is Terraform `.tfstate` file?**
+- It is a file where terraform records what resources it has created along with sensitive information about them. So, if you make any changes to an existing infrastructure or run `terraform destroy`, this is what it refers in order to perform necessary and relevant actions.
