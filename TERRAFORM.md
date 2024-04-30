@@ -6,6 +6,11 @@
    ```shell
    terraform init
    ```
+2. Check if your code is good
+   
+   ```shell
+   terraform validate
+   ```
 
 2. To review what will terraform create from your definition files or to dry-run configs:
 
