@@ -71,10 +71,6 @@ variable "ingress2_cidr" {
   description = "Value for Ingress2 CIDR"
 }
 
-variable "egress_description" {
-  description = "Value for Egress description"
-}
-
 variable "egress_from_port" {
   description = "Value for Egress from port"
 }
@@ -101,13 +97,8 @@ variable "ec2_instance_type" {
   description = "Value for EC2 instance type"
 }
 
-variable "key_name" {
-  description = "Value for the name of the public key to be used for EC2 connection"
-}
-
 variable "ec2_provisioner_connection_type" {
   description = "Value for the type of connection to the EC2 instance"
-
 }
 
 variable "ec2_provisioner_user" {
@@ -116,11 +107,6 @@ variable "ec2_provisioner_user" {
 
 variable "ec2_provisioner_private_key" {
   description = "Value for the private key used for EC2 connection"
-}
-
-variable "ec2_provisioner_host" {
-  description = "Value for the EC2 host to be used for connection"
-
 }
 
 variable "provisioner_file_source" {
