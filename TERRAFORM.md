@@ -7,7 +7,7 @@
    terraform init
    ```
 2. Check if your code is good
-   
+
    ```shell
    terraform validate
    ```
@@ -19,7 +19,7 @@
    ```
 
 3. To build your infrastructure as shown by `terraform plan` command:
-   
+
     ```shell
     terraform apply
     ```
@@ -41,4 +41,3 @@
 
 ## **What are output variables in Terraform?**
 - If you want to get value for any parameter of the resource created by terraform, you can request for the same by using `output` keyword and defining what you want in output. For eg: If you want terraform to print the public_ip of the instance after it is created so that you don't have to go to UI to get this information, you can create an output variable for the same and terraform will print the value for this once it is done building your infrastructure.
-
