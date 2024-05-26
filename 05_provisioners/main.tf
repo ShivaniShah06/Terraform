@@ -6,7 +6,7 @@ resource "aws_vpc" "my-vpc" {
 # Define key
 resource "aws_key_pair" "deployer" {
   key_name   = var.aws_key_name
-  public_key = var.aws_public_key_location
+  public_key = file(var.aws_public_key_location)
 }
 
 # Define public subnet
@@ -66,22 +66,22 @@ resource "aws_security_group" "my-security-group" {
 }
 
 resource "aws_instance" "my-ec2-instance" {
-  ami             = var.ec2_ami
-  instance_type   = var.ec2_instance_type
-  key_name        = ""
-  subnet_id       = ""
-  security_groups = ""
+  ami                    = var.ec2_ami
+  instance_type          = var.ec2_instance_type
+  key_name               = aws_key_pair.deployer.key_name
+  subnet_id              = aws_subnet.my-public-subnet.id
+  vpc_security_group_ids = [aws_security_group.my-security-group.id]
 
   connection {
-    type        = ""
-    user        = ""
-    private_key = ""
-    host        = ""
+    type        = var.ec2_provisioner_connection_type
+    user        = var.ec2_provisioner_user
+    private_key = var.ec2_provisioner_private_key
+    host        = self.public_ip
   }
 
   provisioner "file" {
-    source      = ""
-    destination = ""
+    source      = var.provisioner_file_source
+    destination = var.provisioner_file_destination
 
   }
 
