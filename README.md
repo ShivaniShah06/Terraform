@@ -11,6 +11,8 @@ Learning Terraform for Infrastructure as Code
 - [Conditional expressions in Terraform](02_vpc_with_ec2/conditions.md)
 - [VPC with EC2 using Terraform](02_vpc_with_ec2/PROJECT_vpc_with_ec2/README.md)
 - [Modules in Terraform](03_terraform_modules/README.md)
+- [Remote Backend & Locking Mechanism in Terraform](04_terraform_state_remote_backend/README.md)
+- [Provisioners in Terraform](05_provisioners/README.md)
 
 ### REFERENCES:
 https://github.com/iam-veeramalla/terraform-zero-to-hero/tree/main
