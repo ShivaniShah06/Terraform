@@ -19,6 +19,15 @@ variable "subnet_cidr" {
   description = "Value for CIDR for public subnet"
 }
 
+variable "userdata_file" {
+  description = "Value for the name of the userdata file"
+
+}
+
+variable "subnet_public_ip_mapping" {
+  description = "Boolean value for whether to map public ip on instances launched within this subnet or not"
+}
+
 variable "rt_cidr" {
   description = "Value for Route Table CIDR"
 }
