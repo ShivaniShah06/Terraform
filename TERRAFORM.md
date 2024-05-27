@@ -6,29 +6,60 @@
    ```shell
    terraform init
    ```
-2. Check if your code is good
+2. Check if your code is valid:
 
    ```shell
    terraform validate
    ```
 
-2. To review what will terraform create from your definition files or to dry-run configs:
+3. Format your .tf files:
+
+   ```shell
+   terraform fmt
+   ```
+
+4. To review what will terraform create from your definition files or to dry-run configs:
 
    ```shell
    terraform plan
    ```
 
-3. To build your infrastructure as shown by `terraform plan` command:
+5. To build your infrastructure as shown by `terraform plan` command:
 
     ```shell
     terraform apply
     ```
 
-4. To destroy your infrastructure that was created using terraform:
+6. To destroy your infrastructure that was created using terraform:
 
    ```shell
    terraform destroy
    ```
+
+7. To read terraform state file:
+   
+   ```shell
+   terraform show
+   ```
+
+8. To refresh your .tfstate file as per remote infrastructure:
+
+   ```shell
+   terraform refresh
+   ```
+
+9. To create a new workspace or environment:
+
+   ```shell
+   terraform workspace new dev|stage|prod
+   ```
+
+10. To switch to a new workspace
+ 
+   ```shell
+   terraform workspace select dev|stage|prod
+   ```
+
 
 ### **What is Terraform `.tfstate` file?**
 - It is a file where terraform records what resources it has created along with sensitive information about them. So, if you make any changes to an existing infrastructure or run `terraform destroy`, this is what it refers in order to perform necessary and relevant actions.
