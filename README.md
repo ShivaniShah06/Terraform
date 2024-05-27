@@ -13,6 +13,7 @@ Learning Terraform for Infrastructure as Code
 - [Modules in Terraform](03_terraform_modules/README.md)
 - [Remote Backend & Locking Mechanism in Terraform](04_terraform_state_remote_backend/README.md)
 - [Provisioners in Terraform](05_provisioners/README.md)
+- [Terraform Workspaces](06_terraform_workspaces/README.md)
 
 ### REFERENCES:
 https://github.com/iam-veeramalla/terraform-zero-to-hero/tree/main
