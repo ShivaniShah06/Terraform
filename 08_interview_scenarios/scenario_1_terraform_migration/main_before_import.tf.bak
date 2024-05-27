@@ -1,0 +1,13 @@
+provider "aws" {
+  region = "us-west-1"
+}
+
+# Block to import existing configs from AWS
+import {
+  id = "i-0b4e3a8931fd6881f" # Instance ID of an existing resource
+
+  to = aws_instance.test_import # Resource type and resource name you want to give
+}
+
+# You run `terraform plan -generate-config-out="<name_with_.tf_extension>"` => This will generate a file with all the existing config on AWS
+# Check `migrated_config.tf.bak` file for reference
