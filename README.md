@@ -1,5 +1,6 @@
 # Terraform
 Learning Terraform for Infrastructure as Code
+### Read [Terraform.md](TERRAFORM.md) for more information
 
 ## CONTENT
 - [Important information about Terraform](TERRAFORM.md)
@@ -14,6 +15,8 @@ Learning Terraform for Infrastructure as Code
 - [Remote Backend & Locking Mechanism in Terraform](04_terraform_state_remote_backend/README.md)
 - [Provisioners in Terraform](05_provisioners/README.md)
 - [Terraform Workspaces](06_terraform_workspaces/README.md)
+- [Terraform integrated with Hashicorp Vault](07_terraform_vault_integration/01-secure-terraform.md)
+- [Important interview based scenario](08_interview_scenarios/)
 
 ### REFERENCES:
 https://github.com/iam-veeramalla/terraform-zero-to-hero/tree/main
